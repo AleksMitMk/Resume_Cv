@@ -1,0 +1,1352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/Circular_Std_Font.otf");
+
+    }
+body{
+    /* background:
+    linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(#f2f2f2 1px, transparent 1px), #fdfbfb;
+    background-size: 110px 130px; */
+    background-image: url('../../images/background.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+}
+/* First Site from Laika Index  */
+.centeredText, .image{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+.centeredTextModal{
+    height: 61vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+    width: 31%;
+}
+
+.text p{
+    width: 85%;
+}
+.text .h1, .categoryText .h1{
+    font-weight: 900;
+    font-size: 38px;
+}
+.text p, .footText p{
+    padding: 15px 0;
+    font-weight: bold;
+    color: rgb(141, 141, 141);
+    margin: 0;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+.text a{
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    margin-top: 30px;
+    color:  #de4571;
+}
+.text .btn{
+    color: #f2f2f2;
+    background-color: #6630D8;
+    padding: 13px 50px;
+    border-radius: 5px;
+}
+.btn a{
+    color: #f2f2f2;
+    padding: 13px 50px;
+}
+.text .btn:hover, .catBtn .btn:hover{
+    background-color: #f2f2f2;
+    color: #6630D8;
+    border: 1px solid #6630D8;
+    text-decoration: none;
+}
+.img{
+    width: 100%;
+}
+.footer{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footText span a{
+    color: #6630D8;
+}
+.footText span a:hover{
+    text-decoration: none;
+    color: rgb(151, 45, 184);
+}
+/* End of First Site from Laika Index  */
+/* Category site   */
+.box{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-radius: 5px;
+}
+.boxTextField{
+    margin: 0 0 30px 0px;
+}
+.boxText{
+    margin: 0 0 30px 17px;
+}
+.allBox{
+    height:300px;
+    width: 330px;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+.boxes{
+    height: 25vh;
+}
+.box .h3{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+}
+.categoryText{
+    height: 100%;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+.categoryText .h1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.catBtn .btn{
+    color: #f2f2f2;
+    background-color: #6630D8;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.catBtn{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.catBtn a{
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+.visitField{
+    display: flex;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+.visit{
+    background-color: #EDE63F;
+    width: 50%;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: f2f2f2;
+}
+.visit-right{
+    background-color: #7738FF;
+}
+.visitBtn{
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.visitBtn .btn{
+    color: #f2f2f2;
+    background-color: rgb(0, 0, 0);
+    padding: 12px 45px;
+    margin: 0 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.visit h5{
+    font-weight: bold;
+    color: white;
+}
+.visitBtn .btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: #f2f2f2;
+}
+/* The page for cv linkedin and wearelaika.com */
+
+.pagesBtn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+
+.cv{
+    width: 28%;
+    height: 60%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv a{
+    color: #6630D8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cv a:focus, .cv a:hover{
+    color: #f2f2f2;
+}
+.cv .btn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+.cv .btn:hover, .cv .btn:active, .active{
+    background-color: #6630D8;
+    color: #f2f2f2;
+}
+.editable .btn{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    background-color: #6630D8;
+    color: #f2f2f2;
+}
+
+
+.active{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+.active a{
+    color: #f2f2f2;
+}
+#leftSite, .rightSite{
+    background-color: #fafafa;
+    height: 100%;
+    margin: 40px 15px 11px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    height: 81vh;
+}
+.rightSite{
+    margin-left: 45px;
+    overflow: auto;
+}
+
+.edit, .download .btn{
+    background-color: #6630d8;
+    color: #f2f2f2;
+    font-family: 'Circular', Arial, sans-serif;
+    letter-spacing: 4px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+.download .btn{
+    height: 40px;
+    margin: 0px -3px;
+}
+.edit .btn{
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.edit .btn:hover{
+    color: #f2f2f2;
+    background-color: #6630D8;
+}
+.edit{
+    background-color: #f2f2f2;
+    color: #6630D8;
+}
+.download .btn:hover{
+    background-color: #f2f2f2;
+    color: #6630D8;
+}
+.download{
+    width: 100%;
+}
+.vitae{
+    overflow: overlay;
+    height: 66vh;
+    padding-left: 20px;
+}
+.dlBtn{
+    position: absolute;
+    right: 1px;
+    bottom: 11px;
+}
+.rightSite h4{
+    letter-spacing: 4px;
+    font-family: 'Circular', Arial, sans-serif;
+}
+.rightSite h4, .rightText h4{
+    padding: 30px;
+    font-weight: bold;
+    color: rgb(70, 69, 69);
+   
+}
+.imgPart{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    background-color: #fafafa;
+    padding: 10px 20px 0px 20px;
+}
+#leftSiteLink{
+    margin: 40px 15px 11px 15px;
+    border-radius: 5px;
+    height: 81vh;
+}
+.rightText{
+    margin-left: 45px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    background-color: #fafafa;
+    margin-top: 140px;
+    height: 67vh;
+}
+.curriculumVitae{
+    display: none;
+}
+/* hoverable LinkedIn text */
+.bill, .laika, .cVitae{
+    position: absolute;
+    width: 85%;
+    margin: 20px 10px;
+    z-index: 999;
+    cursor: pointer;
+}
+.bill_01{
+    top: 41%;
+    height: 18%;
+    width: 55%;
+}
+.bill_02{
+    top: 63%;
+    height: 15%;
+    width: 97%;
+}
+.bill_03{
+    top: 81%;
+    height: 15%;
+    width: 97%;
+}
+.bill_04{
+    height: 70%;
+    width: 97%;
+}
+.bill_11{
+    height: 56%;
+}
+.bill_21{
+    top: 48%;
+    height: 47%;
+}
+.bill_31{
+    top: 0%;
+    height: 83%;
+}
+.laika_01{
+    top: 7%;
+    height: 45%;
+    width: 97%;
+}
+.laika_02{
+    top: 53%;
+    height: 37%;
+    width: 97%;
+    z-index: 9999;
+}
+.laika_12{
+    top: 14%;
+    height: 61%;
+    width: 97%;
+}
+
+.laika_22{
+    top: 0;
+    height: 28%;
+    width: 97%;
+}
+.laika_23{
+    top: 53%;
+    height: 43%;
+    width: 97%;
+}
+.laika_24{
+    top: 28%;
+    height: 23%;
+    width: 97%;
+}
+.laika_31{
+    height: 40%;
+    top: 49%;
+    width: 97%;
+}
+.laika_32{
+    height: 50%;
+    top: -7px;
+    width: 97%;
+}
+.laika_41{
+    top: 30px;
+    width: 97%;
+    height: 21%;
+}
+.laika_42{
+    top: 27%;
+    width: 97%;
+    height: 14%;
+}
+.laika_43{
+    top: 42%;
+    height: 15%;
+    width: 97%;
+}
+.laika_44{
+    top: 58%;
+    height: 32%;
+    width: 97%;
+}
+.laika_51{
+    top: 9%;
+    width: 97%;
+    height: 32%;
+}
+.laika_52{
+    top: 42%;
+    width: 97%;
+    height: 26%;
+}
+.laika_53{
+    top: 69%;
+    width: 97%;
+    height: 26%;
+}
+.position{
+    position: relative;
+}
+/* This is a part for CV hoverable image to show the text helper  */
+.Web_Development_Resume_one{
+    top: 25px;
+    width: 16%;
+    margin: 0 42%;
+    height: 11%;
+}
+.Web_Development_Resume_two{
+    top: 0;
+    left: 0px;
+    width: 39%;
+    height: 6%;
+}
+.Web_Development_Resume_three{
+    top: 6%;
+    left: 0;
+    height: 7%;
+    width: 40%;
+}
+.Web_Development_Resume_four{
+    top: 15%;
+    width: 55%;
+    height: 20%;
+}
+.Web_Development_Resume_five{
+    top: 0;
+    width: 24%;
+    height: 9%;
+    right: 0;
+}
+.Web_Development_Resume_eight{
+    top: 36%;
+    width: 41%;
+    height: 20%;
+    right: 0;
+}
+.Web_Development_Resume_six{
+    top: 15%;
+    width: 42%;
+    right: 0;
+    height: 21%;
+}
+.Web_Development_Resume_seven{
+ 
+}
+.Web_Development_Resume_eight{
+ 
+}
+.Web_Development_Resume_nine{
+    top: 36%;
+    width: 55%;
+    height: 20%;
+}
+.Data_Scientist_Resume_one{
+    top: 8px;
+    width: 14%;
+    height: 10%;
+    margin-left: 31px;
+}
+.Data_Scientist_Resume_two{
+    top: 16%;
+    width: 48%;
+    height: 42%;
+}
+.Data_Scientist_Resume_three{
+    top: 59%;
+    width: 48%;
+    height: 22%;
+}
+.Data_Scientist_Resume_four{
+    top: 36%;
+    width: 48%;
+    height: 8%;
+    right: 0;
+}
+.Data_Scientist_Resume_five{
+    top: 16%;
+    width: 48%;
+    height: 20%;
+    right: 0;
+}
+.Data_Scientist_Resume_six{
+    top: 0;
+    margin-left: 152px;
+    width: 73%;
+    height: 10%;
+}
+.Data_Scientist_Resume_seven{
+    top: 44%;
+    width: 48%;
+    right: 0;
+    height: 8%;
+}
+.Data_Scientist_Resume_eight{
+    top: 52%;
+    width: 48%;
+    right: 0;
+    height: 11%;
+}
+.Data_Scientist_Resume_nine{
+    top: 138px;
+    height: 3%;
+    width: 98%;
+}
+
+.Digital_Marketing_Resume_one{
+    top: 7px;
+    width: 14%;
+    height: 10%;
+    left: 19px;
+}
+.Digital_Marketing_Resume_two{
+    top: 0;
+    left: 18%;
+    width: 76%;
+    height: 11%;
+}
+.Digital_Marketing_Resume_three{
+    top: 16%;
+    width: 48%;
+    height: 48%;
+}
+.Digital_Marketing_Resume_four{
+    top: 65%;
+    width: 48%;
+    height: 23%;
+}
+.Digital_Marketing_Resume_five{
+    top: 12%;
+    height: 4%;
+    width: 97%;
+}
+.Digital_Marketing_Resume_six{
+    top: 16%;
+    width: 48%;
+    right: 0;
+    height: 14%;
+}
+.Digital_Marketing_Resume_seven{
+    top: 30%;
+    right: 0;
+    width: 48%;
+    height: 12%;
+}
+.Digital_Marketing_Resume_eight{
+    top: 43%;
+    right: 0;
+    width: 48%;
+    height: 10%;
+}
+.Graphic_Design_Resume_one{
+    top: 0%;
+    left: 3%;
+    width: 53%;
+    height: 23%;
+}
+.Graphic_Design_Resume_two{
+    top: 26%;
+    left: 7%;
+    width: 53%;
+    height: 12%;
+}
+.Graphic_Design_Resume_three{
+    top: 40%;
+    left: 7%;
+    width: 44%;
+    height: 36%;
+}
+.Graphic_Design_Resume_four{
+    top: 40%;
+    width: 40%;
+    right: 5%;
+    height: 18%;
+}
+.Graphic_Design_Resume_five{
+    top: 59%;
+    width: 37%;
+    right: 7%;
+    height: 17%;
+}
+.Graphic_Design_Resume_six{
+    top: 77%;
+    left: 7%;
+    width: 31%;
+    height: 12%;
+}
+
+/* CV make it Editable */
+.box-title{
+    width: 33px;
+    height: 48px;
+    background: #394A59;
+    margin-right: 20px;
+}
+.lightWeb{
+    background: #30BFA5;
+    width: 33px;
+    height: 48px;
+}
+
+.lightDigital{
+    background: #42858C;
+    width: 8%;
+    height: 4px;
+}
+.webLeft{
+    display: flex;
+}
+.webTitle *{
+    margin: 0 13px;
+}
+.prof .h4{
+    color: #30BFA5;
+}
+.imgUpload .img-circle{
+    border: 3px solid #30BFA5 ;
+}
+.imgUpload, .imgDigitUpload{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgDigitUpload{
+    margin: 15px 11px 12px 28px;
+}
+.imgUpload img, .imgDigitUpload img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  [type="file"] + label {
+    background: #f7f7f700;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+    position: absolute;
+    transition: all 0.3s;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    color: #99c793;
+  }
+.Data [type="file"] + label{
+    color: rgb(110, 110, 110);
+}
+
+
+
+.contact{
+    width: 40%;
+    text-align: right;
+}
+.digitInfo{
+    background-color: #42858C;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.dataInfo{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.contDig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+hr{
+    background-color:rgb(48, 191, 165) ;
+    height: 2px;
+}
+/* Cv web developer */
+.form-group .emailCont{
+    width: 100%;
+    
+}
+.form-group .nameTitle, .form-group .profTitle, .form-group .aboutTitle{
+    position: absolute;
+    width: 75%; 
+}
+.prof{
+    top: 40px;
+}
+.about{
+    top: 80px;
+}
+.form-group input, .form-group textarea{
+    display: none;
+}
+.form-control:focus{
+    border-bottom: 2px solid rgb(48, 191, 165);
+    box-shadow: none;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+}
+.Data .form-control:focus, .Graphic .form-control:focus{
+    border-bottom: 2px solid rgb(46, 50, 71);
+}
+.Data .form-control:hover, .Graphic .form-control:hover{
+    box-shadow: 0px 9px 6px -7px rgb(46, 43, 63);
+}
+.form-control:hover{
+    box-shadow: 0px 9px 6px -7px rgba(48, 191, 165);
+}
+.form-control{
+    border: 1px solid #fff;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    padding: 5px 7px;
+}
+.h2{
+    margin: 0;
+}
+.hideDiv{
+    display: none;
+}
+#digContactIcon{
+    color: #f2f2f2;
+}
+.emailCont{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    width: 90%;
+    
+
+}
+.emailContDig, .emailContData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    color: #f2f2f2;
+    margin: 0;
+}
+.emailContData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    color: black;
+    margin: 0;
+}
+.nameDigRight{
+    display: flex;
+    height: 180px;
+    align-items: center;
+}
+.name, .startMontGraphic, .startYearGraphic, .presentGraphicText, .endMontGraphic, .endYearGraphic, .startMontEdGraphic, .startYearEdGraphic, .presentEduGraphicText, .endMontEdGraphic, .endYearEdGraphic  {
+    font-weight: bold;
+}
+#nameData, #nameDig, #name, #prof{
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+.emailCont *, .emailContData *{
+    padding: 0 5px;
+    font-weight: 600;
+     color: black;
+}
+.emailContDig *{
+    padding: 0 5px;
+    font-weight: 600;
+} 
+.workExp{
+    margin: 0 0 10px 48px;
+    font-weight: 800;
+}
+.workExpRight{
+    margin: 0 0 10px 0; 
+    font-weight: 800;
+}
+.workForm,.periodTextInp{
+    display: flex;
+}
+.experience{
+    margin-bottom: 5px;
+}
+.cs_title, #commentData{
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+.starsWebComment, #commentWeb, #commentDigital{
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    color: rgba(48, 191, 165);
+}
+
+.textDate{
+    display: flex;
+    color: rgba(48, 191, 165);
+}
+.minus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20px;
+}
+.experienceInp input, .experienceInp textarea, .experienceInp label, .experienceInp .periodToogle{
+    display: none;
+    height: 65%;
+}
+.experienceForm{
+    width: 90%;
+}
+.data_Period{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+}
+.data_Period_CT{
+    width: 100%;
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.separator, .slash{
+    max-width: 15px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    height: 65%;
+}
+.period{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15px;
+}
+.period .period-start, .period .period-end{
+    max-width: 32%;
+}
+.period-start{
+    display: flex;
+    max-width: 40%;
+}
+.period-end{
+    display: flex;
+    max-width: 65%;
+    align-items: center;
+}
+
+.periodText{
+    display: flex;
+}
+.period-present{
+    padding-left: 5px;
+}
+#present{
+    margin: 0;
+    display: none;
+}
+li {
+    list-style-type: square;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 25px;
+}
+
+li:before {
+    list-style-type: square;
+    font-size: 25px;
+    color: rgba(48, 191, 165);
+    line-height: 15px;
+    padding-right: 5px;
+    
+}
+.ulLi h5{
+    width: 80%;
+}
+.ulLi span{
+    text-align: end;
+    color: rgba(48, 191, 165);
+}
+.experienceForm .form-group{
+    margin-bottom: 5px;
+}
+.info{
+    position: relative;
+}
+/* #checkbox:hover{
+    display: block;
+}
+.checkbox{
+    color: rgba(0, 0, 0, 0.212);
+} */
+.checkbox:hover{
+    color: rgb(0, 0, 0);
+}
+.dataCheck{
+    display: flex;
+}
+.cs_city, .period-start, .period-end,.info span, .cs_tasks, .prof{
+    color: rgba(48, 191, 165);
+}
+.cs_city{
+    text-align: end;
+}
+input .cs_city{
+    max-width: 100%;
+}
+.Data .info span, .Data .period-start, .Data .period-end, .Data .cs_city, .Data .cs_tasks,
+ .Graphic .info span, .Graphic .period-start, .Graphic .period-end, .Graphic .cs_city, .Graphic .cs_tasks{
+    color: rgb(99, 99, 99);
+}
+.DigitTitle, .profDig{
+    color: #42858C;
+}
+.DataTitle, #DataTitle{
+    color: #384759;
+}
+.profData{
+    color: #505c6b;
+}
+.webLeft form{
+    max-width: 80%;
+}
+.icon{
+    display: none;
+}
+.spanEdit{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    color: #30bfa5;
+}
+.spanEditCont{
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.addJob .btn-default:hover, .addSkills .btn-default:hover, .addEdu .btn-default:hover, .addProject .btn-default:hover, .addAchieve .btn-default:hover{
+    background-color: rgba(48, 191, 165, 0.51) ;
+    color: #fff;
+}
+.addSkills{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.descrip{
+    color: rgb(160, 158, 158);
+}
+.descrip:hover{
+    color: rgb(0, 0, 0);
+}
+.far{
+    cursor: pointer;
+}
+/* Skills Part */
+/* .skillsForm{
+    width: 30%;
+} */
+.skillsFormWeb div{
+    background-color: #30bfa5;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.skillsFormDigital div{
+    background-color: #42858C;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.interestsFormWeb div{
+    border: 1px solid #30bfa5;
+    color: #30bfa5;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.interestsFormDigital div{
+    border: 1px solid #42858C;
+    color: #42858C;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.interestsFormData div{
+    border: 1px solid rgb(46, 46, 46);
+    color: rgb(0, 0, 0);
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.skillCompet, .interestsCompet{
+    max-width: 100%;
+}
+.skillsFormWeb input{
+    background-color: #30bfa5;
+    color: white;
+}
+.skillsFormDigital input{
+    background-color: #42858C;
+    color: white;
+}
+.boxLenght, .boxLenghtInt{
+    width: fit-content;
+}
+#spanDelete{
+    position: absolute;
+    right: -15px;
+    top: 8px;
+    color: rgba(255, 0, 0, 0.384);
+    width: 10px;
+}
+#spanDelete:hover{
+    color: red;
+}
+/* Rating Language */
+ 
+  /* Rating Star Widgets Style */
+  .rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    
+  }
+  .rating-stars ul > li.star {
+    display:inline-block;
+    padding: 0 5px;
+  }
+  
+  /* Idle State of the stars */
+  .rating-stars ul > li.star > i.fas {
+    font-size: 20px; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+  }
+  
+  /* Hover state of the stars */
+  .rating-stars ul > li.star.hover > i.fas {
+    color:#87e2d1;
+    transition: all .25s;
+  }
+  .Data .rating-stars ul > li.star.hover > i.fas {
+    color:#6d6d6d;
+    transition: all .25s;
+  }
+  
+  /* Selected state of the stars */
+  .rating-stars ul > li.star.selected > i.fas {
+    color:#30bfa5;
+    transition: all .25s;
+  }
+  .Data .rating-stars ul > li.star.selected > i.fas {
+    color:#0e1111;
+    transition: all .25s;
+  }
+  .lang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .langSkill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #stars{
+      margin: 0;;
+  }
+  /* Animated Data rated-stars */
+ 
+
+ .cont{
+  width: 93%;
+  max-width: 350px;
+  text-align: center;
+  margin: 4% auto;
+  padding: 30px 0;
+  background: #111;
+  color: #EEE;
+  border-radius: 5px;
+  border: thin solid #444;
+  overflow: hidden;
+}
+
+
+ div.skillsStar{
+  width: 270px;
+  display: inline-block;
+}
+
+ input.starSkill{
+  display: none;
+}
+
+ label.starSkill {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  color: #444;
+  transition: all .2s;
+}
+
+ input.starSkill:checked ~ label.starSkill:before {
+  content:'\f111';
+  color: rgb(7, 6, 4);
+  transition: all .25s;
+}
+
+
+ input.star-5:checked ~ label.starSkill:before {
+  color:rgb(39, 39, 36);
+  text-shadow: 0 0 20px #952;
+}
+
+ input.star-1:checked ~ label.starSkill:before {
+  color: rgb(75, 64, 59);
+}
+
+ label.starSkill:hover{
+  transform: rotate(-15deg) scale(1.3);
+}
+
+ label.starSkill:before{
+  content:'\f10c';
+  font-family: FontAwesome;
+}
+ input.starSkill:checked ~ .rev-box{
+  height: 125px;
+  overflow: visible;
+}
+/* Graphic Design part */
+.outline{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 30px 35px 30px 35px;
+    
+}
+.aboutDesign{
+    margin: 200px 0 100px 20px;
+}
+.emptyDiv{
+    height: 20vh;
+}
+.nameLastname{
+    background-color: black;
+    color: white;
+    height: 62%;
+    width: 51%;
+    position: absolute;
+    top: 0;
+    left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.nameProf{
+    margin-bottom: 30px;
+}
+.nameDesign{
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin: 0 40px;
+}
+.profDesign{
+    letter-spacing: 10px;
+    margin: 0 40px;
+}
+.GraphicTitle{
+    margin: 0 0 10px 0;
+    font-weight: 800;
+}
+.GraphicField{
+    margin: 0 0 30px 20px;
+}
+.delAllData{
+    display: flex;
+    align-items: center;
+    color: red;
+    z-index: 99999;
+    font-size: 20px;
+}
+.delAllData i, .addBtn{
+    display: none;
+}
+#expGraphic, #studyGraphic {
+    margin-top: 0;
+}
+#canvas{
+ 
+    border: 1px solid greenyellow;
+}
+/* New upload Image settings  */
+
+  .container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+ 
+  .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+  }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 90px;
+    z-index: 1;
+    bottom: 26px;
+}
+
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .avatar-upload .avatar-preview {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  #Web_Development_Resume_one .avatar-upload .avatar-preview{
+    border: 4px solid #30BFA5;
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media (min-width: 768px){
+
+      .modal-dialog {
+        width: 96%;
+          margin: 19px 20px;
+  }
+  }
+
+
