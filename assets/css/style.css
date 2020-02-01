@@ -111,13 +111,19 @@ body{
     margin: 0 0 30px 17px;
 }
 .allBox{
-    height:300px;
-    width: 330px;
+    height: 100%;
+    width: 21%;
     font-family: 'Circular', Arial, sans-serif;
     letter-spacing: 4px;
 }
-.boxes{
+.firstRow{
+    display: flex;
+}
+#one{
     height: 25vh;
+}
+.boxes{
+    height: 38vh;
 }
 .box .h3{
     height: 70%;
@@ -125,6 +131,7 @@ body{
     justify-content: center;
     font-weight: bold;
     align-items: center;
+    padding: 0 10px;
 }
 .categoryText{
     height: 100%;
@@ -190,6 +197,7 @@ body{
 .visit h5{
     font-weight: bold;
     color: white;
+    margin-left: 30px;
 }
 .visitBtn .btn:hover{
     color: rgb(0, 0, 0);
@@ -282,6 +290,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
+    
 }
 .edit .btn:hover{
     color: #f2f2f2;
@@ -498,12 +507,7 @@ body{
     right: 0;
     height: 21%;
 }
-.Web_Development_Resume_seven{
- 
-}
-.Web_Development_Resume_eight{
- 
-}
+
 .Web_Development_Resume_nine{
     top: 36%;
     width: 55%;
@@ -718,10 +722,7 @@ body{
     color: rgb(110, 110, 110);
 }
 
-
-
 .contact{
-    width: 40%;
     text-align: right;
 }
 .digitInfo{
@@ -824,6 +825,7 @@ hr{
     display: flex;
     height: 180px;
     align-items: center;
+    width: 50%;
 }
 .name, .startMontGraphic, .startYearGraphic, .presentGraphicText, .endMontGraphic, .endYearGraphic, .startMontEdGraphic, .startYearEdGraphic, .presentEduGraphicText, .endMontEdGraphic, .endYearEdGraphic  {
     font-weight: bold;
@@ -940,15 +942,38 @@ li {
     height: 25px;
 }
 
-li:before {
-    list-style-type: square;
+li.ulLiWeb:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    font-size: 25px;
+    color: #30bfa5;
+    line-height: 15px;
+    background-color: #30bfa5;
+    margin-right: 5px;
+}
+li.ulLiData:before {
+    content: '';
+    width: 10px;
+    height: 2px;
     font-size: 25px;
     color: rgba(48, 191, 165);
     line-height: 15px;
-    padding-right: 5px;
-    
+    background-color: #000000;
+    margin-right: 5px;
 }
-.ulLi h5{
+li.ulLiDigital:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    font-size: 25px;
+    color: rgba(48, 191, 165);
+    line-height: 15px;
+    border: 1px solid #30bfa5;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.ulLi h5, .ulLiDigital h5, .ulLiData h5, .ulLiWeb h5{
     width: 80%;
 }
 .ulLi span{
@@ -1091,6 +1116,7 @@ input .cs_city{
     top: 8px;
     color: rgba(255, 0, 0, 0.384);
     width: 10px;
+    
 }
 #spanDelete:hover{
     color: red;
@@ -1137,7 +1163,7 @@ input .cs_city{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    height: 52px;
   }
   .langSkill{
     display: flex;
