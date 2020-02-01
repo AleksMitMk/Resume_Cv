@@ -259,18 +259,18 @@ $(function () {
 
     //On hover to show the Add button for all parts
     $(document).on('mouseover', '.allHovers', function () {
-        $('#checkbox, .checkbox').show();
+        $('input[type="checkbox"], .checkbox').show();
         $('.delAllData i').show();
         $('.addBtn, .delUlLi').show();
     });
     $(document).on('mouseout', '.allHovers', function () {
-        $('#checkbox, .checkbox').hide();
+        $('input[type="checkbox"], .checkbox').hide();
         $('.delAllData i').hide();
         $('.addBtn, .delUlLi').hide();
     });
     //Input Achievements/Tasks to fill the ul lists
 
-    $(document).on('keyup', '#tasksInp', function (e) {
+    $(document).on('keyup', 'input.Web, input.Digital, input.Data, input.Graphic', function (e) {
         let inp = e.target;
         let inpClass = $(inp).attr("class").split(' ')[1].toString()
         let catList = $(inp).attr("class").split(' ')[2].toString()
@@ -354,14 +354,14 @@ $(function () {
                                                             <div class="checkbox">
                                                                 <div class="period-present">
                                                                     <label>
-                                                                        <input type="checkbox" class="present${btnClass + id}" id="checkbox"> Present
+                                                                        <input type="checkbox" class="present${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                             </div>
                                                             <div class="form-group info">
                                                                <div class="h6 city${btnClass + id} cs_city" id="city${btnClass + id}">City, Country</div>
-                                                               <input type="text" class="form-control city${btnClass + id}Inp" id="cityInp" placeholder="City, Country">
+                                                               <input type="text" class="form-control city${btnClass + id}Inp" id="cityInp${btnClass + id}" placeholder="City, Country">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -373,7 +373,7 @@ $(function () {
                                                 <div class="form-group info">
                                                     <div class="h6 tasks${btnClass + id} cs_tasks" id="tasks">Achievements/Tasks</div>
                                                     <span class="tasks${btnClass + id}Ul hideDiv">
-                                                        <input type="text" class="form-control tasks${btnClass + id}Input" id="tasksInp" placeholder="Achievements/Tasks">
+                                                        <input type="text" class="form-control tasks${btnClass + id}Input ${btnClass}" id="tasksInp${btnClass + id}" placeholder="Achievements/Tasks">
                                                     </span>
                                                     <span >
                                                         <ul class="tasks${btnClass + id}InputUl">
@@ -430,14 +430,14 @@ $(function () {
                                                             <div class="checkbox">
                                                                 <div class="period-present">
                                                                     <label>
-                                                                        <input type="checkbox" class="present${btnClass + id}" id="checkbox"> Present
+                                                                        <input type="checkbox" class="present${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                             </div>
                                                             <div class="form-group info">
                                                                <div class="h6 city${btnClass + id} cs_city" id="city${btnClass + id}">City, Country</div>
-                                                               <input type="text" class="form-control city${btnClass + id}Inp" id="cityInp" placeholder="City, Country">
+                                                               <input type="text" class="form-control city${btnClass + id}Inp" id="cityInp${btnClass + id}" placeholder="City, Country">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -449,7 +449,7 @@ $(function () {
                                                 <div class="form-group info">
                                                     <div class="h6 tasks${btnClass + id} cs_tasks" id="tasks">Achievements/Tasks</div>
                                                     <span class="tasks${btnClass + id}Ul hideDiv">
-                                                        <input type="text" class="form-control tasks${btnClass + id}Input" id="tasksInp" placeholder="Achievements/Tasks">
+                                                        <input type="text" class="form-control tasks${btnClass + id}Input ${btnClass}" id="tasksInp${btnClass + id}" placeholder="Achievements/Tasks">
                                                     </span>
                                                     <span >
                                                         <ul class="tasks${btnClass + id}InputUl">
@@ -498,7 +498,7 @@ $(function () {
                         <div class="checkbox">
                             <div class="period-present">
                                 <label>
-                                    <input type="checkbox" class="presentDigital${btnClass + id}" id="checkbox"> Present
+                                    <input type="checkbox" class="presentDigital${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                 </label>
                             </div>
                         </div>
@@ -508,11 +508,11 @@ $(function () {
             </div>
             <div class="form-group info">
                  <div class="h4 expGraphic${btnClass + id} " id="expGraphic${btnClass + id}">Title/Position</i></div>
-                <input type="text " class="form-control expGraphic${btnClass + id}Inp" id="emailInp" placeholder="Title/Position">
+                <input type="text " class="form-control expGraphic${btnClass + id}Inp" id="emailInp${btnClass + id}" placeholder="Title/Position">
              </div>
             <div class="form-group info">
                 <div class="h4 workGraphic${btnClass + id}" id="workGraphic${btnClass + id}">Workplace/Company</div>
-                <input type="text " class="form-control workGraphic${btnClass + id}Inp" id="emailInp" placeholder="Workplace/Company">
+                <input type="text " class="form-control workGraphic${btnClass + id}Inp" id="emailInp${btnClass + id}" placeholder="Workplace/Company">
              </div>
 
              <div class="form-group info">
@@ -567,7 +567,7 @@ $(function () {
                                                     <div class="checkbox">
                                                         <div class="period-present">
                                                             <label>
-                                                                <input type="checkbox" class="presentEdu${btnClass + id}" id="checkbox"> Present
+                                                                <input type="checkbox" class="presentEdu${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                             </label>
                                                         </div>
                                                     </div>
@@ -583,7 +583,7 @@ $(function () {
                                         <div class="form-group info">
                                             <div class="h6 tasksEducation${btnClass + id} cs_tasks" id="tasks">Courses</div>
                                                 <span class="tasksEducation${btnClass + id}Ul hideDiv">
-                                                    <input type="text" class="form-control tasksEducation${btnClass + id}Input" id="tasksInp" placeholder="Course/Thesis/Project">
+                                                    <input type="text" class="form-control tasksEducation${btnClass + id}Input ${btnClass}" id="tasksInp${btnClass + id}" placeholder="Course/Thesis/Project">
                                                 </span>
                                             <span >
                                                 <ul class="tasksEducation${btnClass + id}InputUl">
@@ -611,10 +611,10 @@ $(function () {
                                                                             <div class="data_Period_CT">
                                                                             <div class="period-start">
                                                                                 <div class="h5 startMontEdData${btnClass + id} nameData" id="startMontEdData${btnClass + id}">mm</div>
-                                                                                <input type="text" maxlength="2" class="form-control startMontEdData${btnClass + id}Inp" id="startMontEdDataInp" placeholder="mm">
+                                                                                <input type="text" maxlength="2" class="form-control startMontEdData${btnClass + id}Inp" id="startMontEdDataInp${btnClass + id}" placeholder="mm">
                                                                                 <div class="slash">/</div>
                                                                                 <div class="h5 startYearEdData${btnClass + id} nameData" id="startYearEdData${btnClass + id}">Year</div>
-                                                                                <input type="text" maxlength="4" class="form-control startYearEdData${btnClass + id}Inp" id="startYearEdDataInp" placeholder="yyyy">
+                                                                                <input type="text" maxlength="4" class="form-control startYearEdData${btnClass + id}Inp" id="startYearEdDataInp${btnClass + id}" placeholder="yyyy">
                                                                             </div>
                                                                             <div class="separator"> - </div>
                                                                             <div class="h5 hideDiv nameData " id="presentEduData${btnClass + id}Text">Present</div>
@@ -628,7 +628,7 @@ $(function () {
                                                                             <div class="checkbox">
                                                                                 <div class="period-present">
                                                                                     <label>
-                                                                                        <input type="checkbox" class="presentEduData${btnClass + id}" id="checkbox"> Present
+                                                                                        <input type="checkbox" class="presentEduData${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                                                     </label>
                                                                                 </div>
                                                                             </div>
@@ -643,7 +643,7 @@ $(function () {
                                                                 </div>
                                                                 <div class="form-group info">
                                                                     <div class="h4 InstitGraphic${btnClass + id}" id="InstitGraphic${btnClass + id}">Institution/Place of Education</div>
-                                                                    <input type="text " class="form-control InstitGraphic${btnClass + id}Inp" id="emailData${btnClass + id}Inp" placeholder="Institution/Place of Education">
+                                                                    <input type="text " class="form-control InstitGraphic${btnClass + id}Inp ${btnClass}" id="emailData${btnClass + id}Inp" placeholder="Institution/Place of Education">
                                                                 </div>
                                                                 
                                                             </form>
@@ -691,7 +691,7 @@ $(function () {
                                                     <div class="checkbox">
                                                         <div class="period-present">
                                                             <label>
-                                                                <input type="checkbox" class="presentEdu${btnClass + id}" id="checkbox"> Present
+                                                                <input type="checkbox" class="presentEdu${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                             </label>
                                                         </div>
                                                     </div>
@@ -707,7 +707,7 @@ $(function () {
                                         <div class="form-group info">
                                             <div class="h6 tasksEducation${btnClass + id} cs_tasks" id="tasks">Courses</div>
                                                 <span class="tasksEducation${btnClass + id}Ul hideDiv">
-                                                    <input type="text" class="form-control tasksEducation${btnClass + id}Input" id="tasksInp" placeholder="Course/Thesis/Project">
+                                                    <input type="text" class="form-control tasksEducation${btnClass + id}Input ${btnClass}" id="tasksInp${btnClass + id}" placeholder="Course/Thesis/Project">
                                                 </span>
                                             <span >
                                                 <ul class="tasksEducation${btnClass + id}InputUl">
@@ -774,7 +774,7 @@ $(function () {
                                                             <div class="checkbox">
                                                                 <div class="period-present">
                                                                     <label>
-                                                                        <input type="checkbox" class="presentProject${btnClass + id}" id="checkbox"> Present
+                                                                        <input type="checkbox" class="presentProject${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -785,7 +785,7 @@ $(function () {
                                                 <div class="form-group info">
                                                     <div class="h6 tasksProject${btnClass + id} cs_tasks" id="tasks">Description of Achievements</div>
                                                     <span class="tasksProject${btnClass + id}Ul hideDiv">
-                                                        <input type="text" class="form-control tasksProject${btnClass + id}Input" id="tasksInp" placeholder="Description of Achievements">
+                                                        <input type="text" class="form-control tasksProject${btnClass + id}Input ${btnClass}" id="tasksInp${btnClass + id}" placeholder="Description of Achievements">
                                                     </span>
                                                     <span >
                                                         <ul class="tasksProject${btnClass + id}InputUl">
@@ -833,7 +833,7 @@ $(function () {
                                                             <div class="checkbox">
                                                                 <div class="period-present">
                                                                     <label>
-                                                                        <input type="checkbox" class="presentCertif${btnClass + id}" id="checkbox"> Present
+                                                                        <input type="checkbox" class="presentCertif${btnClass + id}" id="checkbox${btnClass + id}"> Present
                                                                     </label>
                                                                 </div>
                                                             </div>
